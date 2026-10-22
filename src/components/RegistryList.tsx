@@ -1,6 +1,10 @@
 import EmptyState from './EmptyState.tsx';
+import RegistryItem from './RegistryItem.tsx';
+import { useRegistry } from '../RegistryContext.tsx';
 
 export default function RegistryList() {
+  const { registry } = useRegistry();
+
   return (
     <section className="panel list-panel" aria-labelledby="list-title">
       <div className="section-heading">
@@ -11,7 +15,9 @@ export default function RegistryList() {
         </div>
       </div>
       <div className="ticket-list">
-        <EmptyState />
+        {registry.length === 0
+          ? <EmptyState />
+          : registry.map((entry) => <RegistryItem key={entry.entryID} entry={entry} />)}
       </div>
     </section>
   );
