@@ -58,7 +58,6 @@ export default function PokemonForm() {
         <span className="step">02</span>
         <div>
           <h2 id="form-title">Datos del pokémon</h2>
-          <p>La búsqueda llena estos campos. Después simula el registro.</p>
         </div>
       </div>
       <form className="ticket-form" noValidate action={formAction}>

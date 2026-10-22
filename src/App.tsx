@@ -20,7 +20,6 @@ export default function App() {
             <RegistryList />
           </div>
         </main>
-        <footer>ISC ALL RIGHT RESERVED © 2026</footer>
       </div>
     </RegistryProvider>
   );

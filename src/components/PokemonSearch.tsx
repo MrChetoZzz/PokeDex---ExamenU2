@@ -57,7 +57,6 @@ export default function PokemonSearch() {
         <span className="step">01</span>
         <div>
           <h2 id="search-title">Buscar pokémon</h2>
-          <p>Escribe el nombre exacto para cargarlo en el formulario.</p>
         </div>
       </div>
       <form className="ticket-form" noValidate onSubmit={handleSearch}>

@@ -11,7 +11,7 @@ export default function RegistryList() {
         <span className="step">03</span>
         <div>
           <h2 id="list-title">Registros</h2>
-          <p>Cada envío simulado agrega una tarjeta al final.</p>
+          
         </div>
       </div>
       <div className="ticket-list">
